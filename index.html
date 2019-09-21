@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"  href="public/css/styles.css" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Zilla+Slab+Highlight|Pacifico|Press+Start+2P|Princess+Sofia|Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/animated.css" />
+  <link rel="stylesheet" href="public/css/jabradoodle.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+  <script src="/public/js/jquery.countdown.min.js"></script>
+   <script src="/public/js/particles.min.js"></script>
+  <script src="/public/js/viewport.js"></script>
+  <script src="/public/js/wow.min.js"></script>
+  <script src="/public/js/jabradoodle.js"></script>
+</head>
+<body>
+  <div  id="APCIRCLE" >
+    <div id="header">
+        <div id="header-content" style="height: 10vh; width: 100vw; position: fixed; z-index: 20;margin: 0 auto">
+          <div id="header-large" style="margin: 0 10%;display: flex;height: 100%">
+            <div id="header-logo" >
+             <img src="public/img/logo.png" onclick="play()" style="width:50px;cursor:pointer"> Circulo Academico
+            </div> 
+                    
+            <ul class="header-main-menu" >                  
+                  <li > <a href="#"><span>Quienes somos</span></a></li>
+                  <li ><a href="#"><span>Ponencias</span></a></li>
+                  <li ><a href="#"><span>Revista AP</span></a> </li>
+                  <li ><a href="#"><span>Participa</span></a> </li>                    
+              </ul>
+              <div id="menu-item" style="font-size:30px;cursor:pointer;height: 100%;margin: 0 1%;" onclick="openNav();" >
+                  <span >&#9776; </span>
+              </div> 
+              
+          </div>        
+         
+        </div>
+     
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">Quienes somos</a>
+            <a href="#">Ponencias</a>
+            <a href="#">Revista AP</a>            
+            <a href="#">Participa</a>
+        </div>
+</div>
+    </div>
+    <div id="page1">
+     <section class="section" id="section0">     
+        <div class="videoContainer">
+            <video src="public/media/video/intro.mp4"  muted loop autoplay ></video>
+        </div>
+        <div class="video-overlay"> </div>
+        <div class="video-text "> 
+          <h1 class="animated  bounceInLeft ">Círculo Academico AP </h1>
+        </div>
+      </section>  
+      <section class="section" id="section0">     
+        <div class="videoContainer">
+            <video src="public/media/video/intro.mp4"  muted loop autoplay ></video>
+        </div>
+        <div class="video-overlay"> </div>
+        <div class="video-text "> 
+          <h1 class="animated  bounceInLeft ">Círculo Academico AP </h1>
+        </div>
+      </section>    
+ 
+    </div>
+    <div id="footer"></div>  
+  </div>
+ 
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+  <script type="text/javascript"> 
+      var bAudio = new Audio();
+           bAudio.src="public/media/audios/belaunde2.mp3";
+        function play(){
+            
+              if (bAudio.paused) {  
+                console.log("no hay sonida, empezara a tocar:",bAudio.paused); 
+            
+                 bAudio.play();
+              }
+              else if (bAudio.played) {
+                bAudio.pause();
+              }
+         }
+  
+  </script>
+    <script type="text/javascript"> 
+       $('#clock1').countdown('2019/11/10', function(event) {
+                $(this).html(event.strftime('%D  %H  %M  %S'));
+              });
+  
+  </script>
+    <script type="text/javascript">
+      console.log('loaded');
+    
+      particlesJS('particles-js',
+          {
+              "particles": {
+                "number": {
+                  "value": 200,
+                  "density": {
+                    "enable": true,
+                    "value_area": 800
+                  }
+                },
+                "color": {
+                  "value": ["#ff69b4", "#DC0DB9", "#ED2C92"] 
+                },
+                "shape": {
+                  "type": "star",
+                  "stroke": {
+                    "width": 0,
+                    "color": "#FFB6C1"
+                  },
+                  "polygon": {
+                    "nb_sides": 5
+                  },
+                  "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                  }
+                },
+                "opacity": {
+                  "value": 0.5,
+                  "random": false,
+                  "anim": {
+                    "enable": true,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                  }
+                },
+                "size": {
+                  "value": 7,
+                  "random": true,
+                  "anim": {
+                    "enable": false,
+                    "speed": 80,
+                    "size_min": 0.1,
+                    "sync": false
+                  }
+                },
+                "line_linked": {
+                  "enable": true,
+                  "distance": 100,
+                  "color": "#ffffff",
+                  "opacity": 0.4,
+                  "width": 1
+                },
+                "move": {
+                  "enable": true,
+                  "speed": 4,
+                  "direction": "none",
+                  "random": false,
+                  "straight": false,
+                  "out_mode": "out",
+                  "bounce": false,
+                  "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                  }
+                }
+              },
+              "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                  "onhover": {
+                    "enable": false,
+                    "mode": "repulse"
+                  },
+                  "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                  },
+                  "resize": true
+                },
+                "modes": {
+                  "grab": {
+                    "distance": 800,
+                    "line_linked": {
+                      "opacity": 1
+                    }
+                  },
+                  "bubble": {
+                    "distance": 800,
+                    "size": 80,
+                    "duration": 2,
+                    "opacity": 0.8,
+                    "speed": 3
+                  },
+                  "repulse": {
+                    "distance": 400,
+                    "duration": 0.4
+                  },
+                  "push": {
+                    "particles_nb": 4
+                  },
+                  "remove": {
+                    "particles_nb": 2
+                  }
+                }
+              },
+              "retina_detect": true
+            }
+        );
+    </script>
+</body>
+</html>

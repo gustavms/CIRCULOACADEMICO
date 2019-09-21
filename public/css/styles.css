@@ -121,4 +121,10 @@ body{
  	text-align: center;
 	font-size: 2em;
  }
+ .header-main-menu{
+ 	display: none;
+ }
+ #menu-item{
+ 	 	margin: 0 10% !important;
+ }
 }
